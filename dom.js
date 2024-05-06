@@ -1,15 +1,29 @@
-console.log("visina je: " + window.innerHeight);
-console.log("širina je: " + window.innerWidth);
+console.log("Visina je: " + window.innerHeight);
+console.log("Širina je: " + window.innerWidth);
 
-console.log("domena je: " + window.location.hostname);
+console.log("Domena je: " + window.location.hostname);
 
-var x = window.confirm("ovime prihvacate nasu politiku o kolacicima");
-console.log("response= " + x);
+var x = window.confirm("Ovime prihvaćate našu politiku o kolačićima");
+
+console.log("Response= " + x);
+
+debugger;
+
 if(x == true){
-    console.log("korisnik odgovorio OK");
-} else {
-    console.log("korisnik odgovorio not OK");
+    console.log("Korisnik odgovorio OK");
+} 
+else {
+    console.log("Korisnik odgovorio not OK");
     window.location = "onama.html"
+    return;
 }
 
-//window.location ="onama.html";
+//console.log("End page 1");
+//window.alert("test alert");
+console.log("End page");
+
+window.setTimeout(function() {
+    console.log("Ispis sa delay od 2 sek");
+},
+    2000);
+
